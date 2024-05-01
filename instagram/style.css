@@ -1,0 +1,63 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2f2f2f;
+
+}
+
+#postcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.post {
+  position: relative; /* Stelle Positionierung relativ ein */
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px; /* Abstand zwischen Autor und Location */
+}
+
+.profile-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author {
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+}
+
+.location {
+
+  bottom: 5px; /* Abstand zum unteren Rand */
+  left: 55px; /* Abstand zum linken Rand (inklusive Profilbildbreite und -abstand) */
+  color: #999;
+}
+
+.description {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.lcss {
+  display: flex;
+  justify-content: space-between;
+}
+.lcss img {
+  width: 64px;
+  height: 64px;
+  margin: 10px 10px 10px 10px;
+}

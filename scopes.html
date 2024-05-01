@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scopes</title>
+  </head>
+  <body onload="render()">
+    <ul id="mylist"></ul>
+
+    <script>
+      let fruits = ["Apple", "Banana", "Clementine"];
+
+      function render() {
+        let mylist = document.getElementById("mylist");
+        mylist.innerHTML = "";
+
+        for (let i = 0; i < fruits.length; i++) {
+          const fruit = fruits[i];
+          mylist.innerHTML += generateListItem(i);
+        }
+      }
+
+      function generateListItem(index) {
+        let fruit = fruits[index];
+        return `<li><a href="#">${fruit}</a></li>`;
+      }
+    </script>
+  </body>
+</html>
